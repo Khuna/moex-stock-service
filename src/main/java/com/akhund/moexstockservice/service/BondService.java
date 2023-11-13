@@ -8,5 +8,6 @@ import org.springframework.stereotype.Service;
 public class BondService {
 
     public StocksDto getBondsFromMoex(TickersDto tickersDto) {
+        return null;
     }
 }
