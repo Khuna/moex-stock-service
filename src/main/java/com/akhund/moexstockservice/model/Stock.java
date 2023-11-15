@@ -1,10 +1,12 @@
 package com.akhund.moexstockservice.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 @Data
 @AllArgsConstructor
+@Builder
 public class Stock {
 
     private String ticker;
