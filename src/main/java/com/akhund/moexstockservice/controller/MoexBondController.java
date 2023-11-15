@@ -1,5 +1,7 @@
 package com.akhund.moexstockservice.controller;
 
+import com.akhund.moexstockservice.dto.FigiesDto;
+import com.akhund.moexstockservice.dto.StockPriceDto;
 import com.akhund.moexstockservice.dto.StocksDto;
 import com.akhund.moexstockservice.dto.TickersDto;
 import com.akhund.moexstockservice.service.BondService;
@@ -20,4 +22,11 @@ public class MoexBondController {
     public StocksDto getBondsFromMoex(@RequestBody TickersDto tickersDto) {
         return bondService.getBondsFromMoex(tickersDto);
     }
+
+    @PostMapping("/prices")
+    public StockPriceDto getPricesByFigies(@RequestBody FigiesDto figiesDto) {
+        return bondService.getPricesByFigies(figiesDto);
+    }
+
+
 }
